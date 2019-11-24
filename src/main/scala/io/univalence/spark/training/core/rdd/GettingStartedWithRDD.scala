@@ -1,13 +1,12 @@
-package io.univalence.spark.training.spark.rdd
+package io.univalence.spark.training.core.rdd
 
-import org.apache.spark.sql.SparkSession
+import io.univalence.spark.training.core.SparkEnvironment
 
-object GettingStartedWithRDD extends App {
+object GettingStartedWithRDD extends App with SparkEnvironment {
 
   /**
-    * Exercise 1 : Define a Spark Session with a local Master
+    * Exercise 1 : print the spark configurations
     */
-  val spark: SparkSession = ???
 
   /**
     * Exercise 2 : Using spark, read the following file as an RDD[String]
